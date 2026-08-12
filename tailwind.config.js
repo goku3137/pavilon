@@ -7,21 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          light: '#d4af37',
-          DEFAULT: '#b5952f',
-          dark: '#8e7525',
+        background: '#0a0a0a', // Deep charcoal/near-black
+        surface: '#121212', // Slightly lighter for cards
+        ivory: '#f5f2eb', // Primary text
+        muted: '#a3a099', // Secondary text
+        accent: {
+          light: '#f2dfc6',
+          DEFAULT: '#d4af82', // Champagne/warm metallic
+          dark: '#a88151',
         },
-        maroon: {
-          DEFAULT: '#800000',
-        },
-        cream: {
-          DEFAULT: '#FFFDD0',
-        }
       },
       fontFamily: {
         serif: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
+      },
+      letterSpacing: {
+        widest: '.25em',
       }
     },
   },
