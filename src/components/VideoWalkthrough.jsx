@@ -27,7 +27,7 @@ export default function VideoWalkthrough() {
           </motion.div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-ivory tracking-wide mb-4">
-            WALK THROUGH LA MIRAGE
+            WALK THROUGH MONARCH PAVILION
           </h2>
           <span className="text-[10px] font-sans tracking-[0.3em] text-accent uppercase">
             A Cinematic Tour
