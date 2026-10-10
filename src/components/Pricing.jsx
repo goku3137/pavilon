@@ -5,7 +5,7 @@ export default function Pricing({ onBookNow }) {
   const packages = [
     {
       name: 'CORAL',
-      price: '₹50,000',
+      price: '₹80,000',
       description: 'The intimate collection.',
       features: ['Up to 200 Guests', 'Standard Decoration', 'Basic Audio System', 'Air Cooler Support', '4 Hours Duration'],
       recommended: false
@@ -40,7 +40,7 @@ export default function Pricing({ onBookNow }) {
 
         <div className="grid md:grid-cols-3 gap-8 items-start">
           {packages.map((pkg, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -53,14 +53,14 @@ export default function Pricing({ onBookNow }) {
                   The Standard
                 </div>
               )}
-              
+
               <h3 className="text-xl font-serif text-ivory tracking-widest uppercase mb-4">{pkg.name}</h3>
               <div className="text-sm font-sans font-light text-muted h-10 mb-8">{pkg.description}</div>
-              
+
               <div className="mb-12">
                 <span className="text-4xl font-serif text-ivory">{pkg.price}</span>
               </div>
-              
+
               <div className="space-y-4 mb-12">
                 {pkg.features.map((feature, idx) => (
                   <div key={idx} className="text-xs font-sans text-muted tracking-wide flex items-center gap-4">
@@ -69,14 +69,13 @@ export default function Pricing({ onBookNow }) {
                   </div>
                 ))}
               </div>
-              
-              <button 
+
+              <button
                 onClick={onBookNow}
-                className={`w-full py-4 text-xs font-sans tracking-[0.2em] uppercase transition-all duration-300 ${
-                  pkg.recommended 
-                    ? 'bg-ivory text-background hover:bg-accent' 
+                className={`w-full py-4 text-xs font-sans tracking-[0.2em] uppercase transition-all duration-300 ${pkg.recommended
+                    ? 'bg-ivory text-background hover:bg-accent'
                     : 'bg-transparent border border-white/20 text-ivory hover:border-accent hover:text-accent'
-                }`}
+                  }`}
               >
                 Inquire Now
               </button>
